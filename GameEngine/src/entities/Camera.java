@@ -5,7 +5,7 @@ import org.lwjgl.util.vector.Vector3f;
 
 public class Camera {
 
-	private Vector3f position = new Vector3f(0,5,0);
+	private Vector3f position = new Vector3f(0,10,0);
 	private float pitch = 10;
 	private float yaw;
 	private float roll;
@@ -14,16 +14,16 @@ public class Camera {
 	
 	public void move() {
 		if(Keyboard.isKeyDown(Keyboard.KEY_W)) {
-			position.z -= 1f;
+			position.z -= 0.3f;
 		}
 		if(Keyboard.isKeyDown(Keyboard.KEY_D)) {
-			position.x += 1f;
+			position.x += 0.3f;
 		}	
 		if(Keyboard.isKeyDown(Keyboard.KEY_A)) {
-			position.x -= 1f;
+			position.x -= 0.3f;
 		}		
 		if(Keyboard.isKeyDown(Keyboard.KEY_S)) {
-			position.z += 1f;
+			position.z += 0.3f;
 		}				
 	}
 	
